@@ -1,23 +1,15 @@
-# Express API Starter
+# Node Proxy server
 
-Includes API Server utilities:
+### This server allows secure access to user information by intercepting requests, after which it routes the request. 
 
-* [morgan](https://www.npmjs.com/package/morgan)
-  * HTTP request logger middleware for node.js
+This server acts a proxy for another server which serves user data (in this demonstration it calls the randomuser API to get user information to simulate an server with user database).
+ 
+This proxy has alot of features indended to protect this user information, these features include: 
+ - Request logging 
+ - IP blacklisting 
+ - Rate Limiting (prevents spamming server endpoints)
+ - Authentication 
 
-* [dotenv](https://www.npmjs.com/package/dotenv)
-  * Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`
-
-Development utilities:
-
-* [nodemon](https://www.npmjs.com/package/nodemon)
-  * nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
-* [eslint](https://www.npmjs.com/package/eslint)
-  * ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-<!-- * [mocha](https://www.npmjs.com/package/mocha)
-  * ☕️ Simple, flexible, fun JavaScript test framework for Node.js & The Browser ☕️ -->
-<!-- * [supertest](https://www.npmjs.com/package/supertest)
-  * HTTP assertions made easy via superagent. -->
 
 ## Setup
 
