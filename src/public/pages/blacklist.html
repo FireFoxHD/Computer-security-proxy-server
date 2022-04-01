@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ 	<head>
+		<title>Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<nav>
+			<div class="page-title"><a href="index.html">Medic MD</a></div>
+			<div class="nav-options">
+				<p class="nav-items"><a href="dashboard.html">Search</a></p>
+				<p class="nav-items"><a href="blacklist.html">Blacklist</a></p>
+				<p class="nav-items"><a href="#">Get Logs</a></p>
+			</div>
+			
+			
+			<div class="actions">
+				<a id="logout-btn" class="logout btn">Log out</a>
+			</div>
+		</nav>
+
+		<div class="dash-container">
+			<div class="search-container">
+				<form class="search-form">
+					<input class="form-field" id="ip-block" type="text" placeholder="IP Address"/>
+					<div class="form-options">
+						<button id="ipBlock-btn" class="form-btn ip-btn">Add to Blacklist</button>
+						<button id="ipUnblock-btn" class="form-btn ip-btn">Remove from Blacklist</button>
+					</div>
+					
+				</form>
+			</div>
+
+
+		
+			<div class="info-list" id="ip-list">
+
+			</div>
+		</div>
+
+		<footer><p><b>&copy;COPY RIGHT COMPUTER SECURITY PROJECT</b></p></footer>
+		<script src="../blacklist.js"></script>
+	</body>
+</html>
+

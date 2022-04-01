@@ -1,0 +1,13 @@
+# Logs
+*.log
+npm-debug.log*
+
+#Tests - cause they dont currently exist
+test
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
