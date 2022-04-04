@@ -9,6 +9,7 @@ import { checkIp } from './src/middleware/ip.utils';
 import { router as adminRouter } from './src/routes/admin.routes';
 import { router as apiRouter } from './src/routes/api.routes';
 import { router as authRouter } from './src/routes/auth.routes';
+import {verifyToken} from './src/middleware/jwt.utils';
 import path, { dirname } from 'path'
 
 const app = express();
@@ -37,6 +38,7 @@ morganBody(app, {
 });
 
 // app.use(logger('common', {stream: createWriteStream(`./Logs/${logfile}.log`, {flags: 'a'})}));
+app.use(verifyToken());
 app.use(checkIp);
 
 
